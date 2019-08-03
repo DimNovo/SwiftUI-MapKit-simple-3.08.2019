@@ -15,6 +15,8 @@
 		7493AF8622F51AB700C18556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7493AF8422F51AB700C18556 /* LaunchScreen.storyboard */; };
 		7493AF9122F51AB700C18556 /* SwiftUI_MapKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493AF9022F51AB700C18556 /* SwiftUI_MapKitTests.swift */; };
 		7493AF9C22F51AB700C18556 /* SwiftUI_MapKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493AF9B22F51AB700C18556 /* SwiftUI_MapKitUITests.swift */; };
+		7493AFAA22F51C7400C18556 /* LocationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493AFA922F51C7400C18556 /* LocationItem.swift */; };
+		7493AFAE22F520C700C18556 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7493AFAD22F520C700C18556 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7493AF9722F51AB700C18556 /* SwiftUI MapKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI MapKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7493AF9B22F51AB700C18556 /* SwiftUI_MapKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_MapKitUITests.swift; sourceTree = "<group>"; };
 		7493AF9D22F51AB700C18556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7493AFA922F51C7400C18556 /* LocationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationItem.swift; sourceTree = "<group>"; };
+		7493AFAD22F520C700C18556 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,8 @@
 			children = (
 				7493AF7922F51AB700C18556 /* AppDelegate.swift */,
 				7493AF7B22F51AB700C18556 /* SceneDelegate.swift */,
-				7493AF7D22F51AB700C18556 /* ContentView.swift */,
+				7493AFAB22F51CFE00C18556 /* Model */,
+				7493AFAC22F51D0800C18556 /* View */,
 				7493AF7F22F51AB700C18556 /* Assets.xcassets */,
 				7493AF8422F51AB700C18556 /* LaunchScreen.storyboard */,
 				7493AF8722F51AB700C18556 /* Info.plist */,
@@ -134,6 +139,23 @@
 				7493AF9D22F51AB700C18556 /* Info.plist */,
 			);
 			path = "SwiftUI MapKitUITests";
+			sourceTree = "<group>";
+		};
+		7493AFAB22F51CFE00C18556 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7493AFA922F51C7400C18556 /* LocationItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7493AFAC22F51D0800C18556 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7493AFAD22F520C700C18556 /* MapView.swift */,
+				7493AF7D22F51AB700C18556 /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +290,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7493AF7A22F51AB700C18556 /* AppDelegate.swift in Sources */,
+				7493AFAA22F51C7400C18556 /* LocationItem.swift in Sources */,
+				7493AFAE22F520C700C18556 /* MapView.swift in Sources */,
 				7493AF7C22F51AB700C18556 /* SceneDelegate.swift in Sources */,
 				7493AF7E22F51AB700C18556 /* ContentView.swift in Sources */,
 			);
