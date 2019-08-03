@@ -28,10 +28,12 @@ struct ContentView: View {
                     Image(locations[selectedSegment].imageURL)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .frame(width: 400, height: 250)
-                        .clipShape(RoundedRectangle(cornerRadius:tapped ? 255 : 15))
+                        .frame(width: tapped ? 250 : 400, height: 250)
+                        .clipShape(RoundedRectangle(cornerRadius: tapped ? 255 : 15))
+                        .overlay(tapped ? Circle().stroke(Color.primary, lineWidth: 2) : nil)
                         .shadow(color: .secondary, radius: 8)
-                        .offset(x: tapped ? 750 : 0, y: 160)
+                        .offset(x: tapped ? CGFloat(self.locations[selectedSegment].coordinates.latitude) : 0,
+                                y: tapped ? CGFloat(self.locations[selectedSegment].coordinates.longitude) : 160)
                         .scaleEffect(tapped ? 0.3 : 1.0)
                         .onTapGesture { withAnimation(.spring()) { self.tapped.toggle()}}
                 }

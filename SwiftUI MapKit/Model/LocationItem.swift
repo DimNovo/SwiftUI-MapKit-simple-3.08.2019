@@ -10,8 +10,8 @@ import Foundation
 import MapKit
 
 struct LocationItem {
-    var title, imageURL: String
-    var coordinates: CLLocationCoordinate2D
+    let title, imageURL: String
+    let coordinates: CLLocationCoordinate2D
 }
 
 extension LocationItem {
